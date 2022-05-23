@@ -1,0 +1,44 @@
+{
+  "name": "fingerjs",
+  "version": "0.0.4",
+  "description": "Get browser informaton",
+  "scripts": {
+    "dev": "vite",
+    "build": "rimraf -rf ./dist && tsc && vite build",
+    "preview": "vite preview"
+  },
+  "files": [
+    "dist",
+    "@fingerprintjs/fingerprintjs"
+  ],
+  "main": "./dist/finger-print.umd.js",
+  "module": "./dist/finger-print.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/finger-print.es.js",
+      "require": "./dist/finger-print.umd.js"
+    }
+  },
+  "types": "./dist/types/index.d.ts",
+  "keywords": [
+    "fingerprint"
+  ],
+  "author": "hejl0903",
+  "dependencies": {
+    "@fingerprintjs/fingerprintjs": "^3.3.3",
+    "detector-js": "^1.3.2",
+    "qiao-get-ip": "^0.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9",
+    "vite-plugin-dts": "^1.1.1"
+  }
+}
