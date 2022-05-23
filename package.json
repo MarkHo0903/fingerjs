@@ -33,7 +33,8 @@
     "detector-js": "^1.3.2",
     "qiao-get-ip": "^0.2.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-json-view": "^1.21.3"
   },
   "devDependencies": {
     "@types/node": "^17.0.35",

@@ -1,10 +1,15 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { getFinger } from '../lib';
 
+import ReactJson from 'react-json-view';
+
 export default function App() {
+  const [jsonData, setJsonData] = useState({});
+
   useEffect(() => {
     Promise.resolve(getFinger()).then((data) => {
       console.log('finger', data);
+      setJsonData(data);
     });
 
     // Promise.resolve(getBaseFinger()).then((data) => {
@@ -12,5 +17,5 @@ export default function App() {
     // });
   }, []);
 
-  return <h1>getFinger</h1>;
+  return <ReactJson src={jsonData} />;
 }
