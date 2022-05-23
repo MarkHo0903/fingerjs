@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { getFinger, getBaseFinger } from '../lib';
+import { getFinger } from '../lib';
 
 export default function App() {
   useEffect(() => {
