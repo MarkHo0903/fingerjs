@@ -30,5 +30,5 @@ async function getFinger(): Promise<FingerProps> {
   }
 }
 
-export { getDetector, getBaseFinger, getIp, getFinger };
-export default { getDetector, getBaseFinger, getIp, getFinger };
+export { getDetector, getBaseFinger, getIp, getFinger, getGeoLg };
+export default { getDetector, getBaseFinger, getIp, getFinger, getGeoLg };
