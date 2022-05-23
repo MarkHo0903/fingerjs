@@ -23,6 +23,10 @@
   "keywords": [
     "fingerprint"
   ],
+  "homepage": "https://github.com/hjl0903/fingerjs",
+  "repository": {
+    "url": "https://github.com/hjl0903/fingerjs"
+  },
   "author": "hejl0903",
   "dependencies": {
     "@fingerprintjs/fingerprintjs": "^3.3.3",
